@@ -1,0 +1,123 @@
+@media (max-width: 1200px) {
+   html {
+      font-size: 48.5%;
+   }
+
+   .container {
+      padding: 16px 32px;
+   }
+
+   .container-sobre p {
+      font-size: 14px;
+   }
+
+   article {
+      &:nth-child(1) {
+         margin-bottom: 32px;
+      }
+
+      &:nth-child(2) {
+         margin-bottom: 16px;
+      }
+      .card {
+         height: 118px;
+      }
+   }
+}
+
+@media (max-width: 916px) {
+   html {
+      font-size: 40%;
+   }
+
+   .container-header li:not(li:last-child) {
+      display: none;
+   }
+
+   .container-hero .hero-info a img {
+      width: 16px;
+   }
+
+   .container-experiencia .btns {
+      a {
+         font-size: 14px;
+         width: 90px;
+      }
+   }
+
+   .container-contato img {
+      display: none;
+   }
+
+   .container-contato div.form {
+      width: 100%;
+   }
+
+   .container-contato h4 {
+      font-size: 22px;
+   }
+
+   .container-contato p {
+      font-size: 16px;
+      line-height: 22px !important;
+   }
+
+   button {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 800px) {
+   .container {
+      padding: 16px;
+   }
+}
+
+@media (max-width: 740px) {
+   .container-hero .hero-info h2 {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 582px) {
+   .container-header li:last-child {
+      font-weight: 400;
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 545px) {
+   .container-hero {
+      display: flex;
+      flex-flow: column-reverse;
+      gap: 1rem;
+
+      .hero-info {
+         width: 100%;
+         flex-direction: column;
+         gap: 2rem;
+
+         h2 {
+            font-size: 22px;
+         }
+
+         ul {
+            gap: 4%;
+         }
+
+         a {
+            font-family: 600;
+         }
+      }
+   }
+}
+
+@media (max-width: 399px) {
+   article .container-cards {
+      gap: 16px;
+      .card {
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}

@@ -1,0 +1,398 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body,
+a {
+   font-family: $font-main;
+   color: $font-color-main;
+}
+
+body {
+   background: $bg-color;
+}
+
+.container {
+   max-width: 1136px;
+   margin-inline: auto;
+   padding: 32px 0;
+}
+
+.container-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   #logo {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+   }
+
+   h1 {
+      display: inline;
+      font-size: 16px;
+      font-weight: 700;
+   }
+
+   ul {
+      display: flex;
+      flex-direction: row;
+      gap: 3.2rem;
+      font-weight: 500;
+      font-size: 16px;
+   }
+
+   li:last-child {
+      font-weight: 700;
+   }
+}
+
+.container-hero {
+   display: flex;
+   justify-content: space-between;
+
+   .hero-info {
+      width: 69%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      h2 {
+         font-size: 5.2rem;
+      }
+
+      p {
+         font-size: 2.2rem;
+      }
+
+      ul {
+         display: flex;
+         gap: 10%;
+      }
+
+      a {
+         display: flex;
+         align-items: center;
+         font-size: 1.6rem;
+         font-weight: 500;
+      }
+   }
+
+   .image {
+      width: 30%;
+      display: flex;
+      align-items: center;
+
+      img {
+         width: 100%;
+         border-radius: 50%;
+      }
+   }
+}
+
+section#sobre,
+section#formacao {
+   background: $bg-color-secondary;
+}
+.container-sobre {
+   padding-bottom: 64px;
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+   width: 100%;
+   h2 {
+      font-size: 3.2rem;
+   }
+
+   p {
+      font-size: 1.6rem;
+      max-width: 751px;
+      text-align: justify;
+   }
+}
+
+#habilidades {
+   background: $bg-color;
+}
+
+article {
+   &:nth-child(1) {
+      margin-bottom: 88px;
+   }
+
+   &:nth-child(2) {
+      margin-bottom: 56px;
+   }
+
+   h3 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 3.2rem;
+      text-align: center;
+   }
+
+   .container-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+      gap: 32px 16px;
+   }
+
+   .card {
+      height: 174px;
+      background: $bg-color-card;
+      padding: 16px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      gap: 1rem;
+      border-radius: 4px;
+   }
+
+   img {
+      width: 32px;
+   }
+
+   span {
+      font-size: 16px;
+   }
+}
+
+.container-formacao {
+   padding-block: 88px;
+
+   h2 {
+      font-size: 3.2rem;
+      text-align: center;
+      margin-bottom: 3.2rem;
+   }
+
+   .container-cards-formacao {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(224px, 368px));
+      justify-content: center;
+      gap: 32px;
+   }
+
+   .card-formacao {
+      display: flex;
+      flex-flow: column;
+      gap: 1rem;
+   }
+
+   .logo {
+      background: $bg-color-card;
+      height: 174px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+   }
+
+   img {
+      width: 40%;
+   }
+
+   h4 {
+      font-size: 16px;
+      font-weight: 700;
+   }
+
+   span {
+      font-size: 14px;
+      font-weight: 500;
+   }
+}
+
+.container-experiencia {
+   .card-experiencia {
+      display: flex;
+      flex-flow: column;
+      gap: 0.6rem;
+   }
+
+   h2 {
+      margin-bottom: 3.2rem;
+      font-size: 3.2rem;
+      text-align: center;
+   }
+
+   .container-cards-experiencia {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+      gap: 32px;
+      width: 100%;
+   }
+
+   img {
+      border: 1px solid $border-color-experience;
+      width: 100%;
+   }
+
+   h4 {
+      font-size: 22px;
+      font-weight: 700;
+   }
+
+   span {
+      font-size: 16px;
+   }
+
+   .btns {
+      a {
+         display: inline-block;
+         width: 120px;
+         padding: 1.2rem;
+         font-size: 16px;
+         text-align: center;
+
+         &:nth-child(1) {
+            border: 1px solid $color-primary;
+            color: $color-primary;
+            margin-right: 1rem;
+         }
+
+         &:nth-child(2) {
+            background: $color-primary;
+            border: 1px solid $color-primary;
+            color: #fff;
+         }
+      }
+   }
+}
+footer {
+   #contato {
+      background: $bg-color-secondary;
+   }
+
+   .container-contato {
+      margin-top: 6.4rem;
+      display: flex;
+      gap: 1.6rem;
+
+      img {
+         width: 45%;
+      }
+
+      .form {
+         width: 55%;
+      }
+
+      h4 {
+         font-weight: 700;
+         font-size: 32px;
+         color: $font-color-main;
+         margin-bottom: 0.8rem;
+         cursor: default;
+      }
+
+      p {
+         font-weight: 500;
+         font-size: 16px;
+         color: $font-color-main;
+         line-height: 1.9rem;
+         margin-bottom: 3.2rem;
+         cursor: default;
+      }
+
+      .label-float {
+         margin-bottom: 3.2rem;
+         margin-block: 20px;
+         position: relative;
+      }
+
+      label {
+         font-size: 16px;
+         color: #a2a2a2;
+         line-height: 20px;
+         // efeito float
+         display: inline-block;
+         padding-inline: 2px;
+         pointer-events: none;
+         position: absolute;
+         top: 0;
+         left: 10px;
+         margin-top: 19px;
+         transition: all 0.3s ease-out;
+      }
+
+      input,
+      textarea {
+         width: 100%;
+         outline: none;
+         border: none;
+         border-radius: 4px;
+         background-color: $bg-color-card;
+         padding-inline: 12px;
+         padding-top: 20px;
+         height: 56px;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 20px;
+         color: $font-color-main;
+         caret-color: #2a7ae4;
+         font-family: $font-main;
+
+         &:focus {
+            border-bottom: 1px solid $color-primary;
+         }
+
+         // efeito float
+         &::placeholder {
+            color: transparent;
+         }
+
+         &:focus + label,
+         &:not(:placeholder-shown) + label {
+            margin-top: 6px;
+            font-size: 12px;
+         }
+      }
+
+      textarea {
+         height: 133px !important;
+         padding-top: 25px;
+         resize: none;
+      }
+
+      button {
+         background-color: $color-primary;
+         padding: 1.6rem;
+         border: none;
+         color: $bg-color-card;
+         font-size: 16px;
+         line-height: 1.9rem;
+         border-radius: 4px;
+         cursor: pointer;
+
+         &:hover {
+            background-color: #20579f;
+         }
+      }
+   }
+
+   cursor: default;
+
+   .container-footer {
+      text-align: center;
+      padding: 32px;
+   }
+
+   p,
+   span {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: $font-color-main;
+      font-weight: 500;
+   }
+}
